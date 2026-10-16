@@ -41,6 +41,6 @@ dataset.add_episode(episode)
 
 Import concrete modules. The package initializer does not re-export them.
 
-`obs["image"]`, when present, is stored as uint8 and loaded back to float in `[-1, 1]`. Every other key, and `info["final_observation"]`, is stored as supplied. See [design](docs/design.md) for the frame alignment and [workflows](docs/workflows.md) for reading, slicing, and online collection.
+`obs["image"]`, when present, is stored as uint8 and loaded back to float in `[-1, 1]`. Every other key, and `info["final_observation"]`, is stored as supplied. Format, storage, sampling, and the package API are in [the dataset document](docs/dataset.md).
 
 This project was written collaboratively by humans and AI.

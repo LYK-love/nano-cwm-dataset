@@ -3,8 +3,8 @@
 import torch
 from torch import Tensor
 
-from nano_cwm_dataset.dataset import Dataset
-from nano_cwm_dataset.episode import Episode
+from nano_dataset.dataset import Dataset
+from nano_dataset.episode import Episode
 
 
 class EpisodeCollector:

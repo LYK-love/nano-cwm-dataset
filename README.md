@@ -1,4 +1,4 @@
-# nano-cwm-dataset
+# nano-dataset
 > You can use AI to translate or explain this document and the rest of the project's documentation in your preferred language.
 >
 > 你可以使用 AI 将本文档和本项目的其他文档翻译成你偏好的语言，或为你解读其中的内容。
@@ -14,7 +14,7 @@ This package stores, slices, and collects episodes. It does not sample batches, 
 Python 3.12 or newer.
 
 ```bash
-uv add --editable /path/to/nano-cwm-dataset
+uv add --editable /path/to/nano-dataset
 ```
 
 ## Use
@@ -23,8 +23,8 @@ uv add --editable /path/to/nano-cwm-dataset
 import torch
 from pathlib import Path
 
-from nano_cwm_dataset.dataset import Dataset
-from nano_cwm_dataset.episode import Episode
+from nano_dataset.dataset import Dataset
+from nano_dataset.episode import Episode
 
 frame = torch.zeros(3, 64, 64)
 episode = Episode(

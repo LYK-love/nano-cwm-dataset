@@ -5,12 +5,12 @@ from pathlib import Path
 import pytest
 import torch
 
-from nano_cwm_dataset.collected import EpisodeCollector
-from nano_cwm_dataset.dataset import Dataset
-from nano_cwm_dataset.episode import Episode
-from nano_cwm_dataset.observations import observation_at
-from nano_cwm_dataset.segment import SegmentId
-from nano_cwm_dataset.view import DatasetView
+from nano_dataset.collected import EpisodeCollector
+from nano_dataset.dataset import Dataset
+from nano_dataset.episode import Episode
+from nano_dataset.observations import observation_at
+from nano_dataset.segment import SegmentId
+from nano_dataset.view import DatasetView
 
 
 def episode(length: int = 3) -> Episode:

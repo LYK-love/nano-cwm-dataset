@@ -10,8 +10,8 @@ from typing import Any
 
 import torch
 
-from nano_cwm_dataset.episode import Episode
-from nano_cwm_dataset.segment import Segment, SegmentId, make_segment
+from nano_dataset.episode import Episode
+from nano_dataset.segment import Segment, SegmentId, make_segment
 
 
 class Dataset(torch.utils.data.Dataset[Segment]):

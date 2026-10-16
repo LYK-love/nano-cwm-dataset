@@ -1,6 +1,6 @@
 # DIAMOND
 
-The episode, dataset, and segment implementation in `src/nano_cwm_dataset/`
+The episode, dataset, and segment implementation in `src/nano_dataset/`
 is a typed adaptation of [DIAMOND](https://github.com/eloialonso/diamond),
 by Eloi Alonso. It retains DIAMOND's field alignment, per-episode tensor files,
 segment addressing and padding conventions. Observations are a dict of

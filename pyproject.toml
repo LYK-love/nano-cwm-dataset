@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "nano-cwm-dataset"
+name = "nano-dataset"
 version = "0.1.0"
 description = "Episode datasets with an extensible observation dict"
 readme = "README.md"
@@ -14,10 +14,10 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/nano_cwm_dataset"]
+packages = ["src/nano_dataset"]
 
 [tool.hatch.build.targets.sdist]
-include = ["/src/nano_cwm_dataset", "/pyproject.toml", "/README.md", "/LICENSE", "/THIRD_PARTY_NOTICES.md"]
+include = ["/src/nano_dataset", "/pyproject.toml", "/README.md", "/LICENSE", "/THIRD_PARTY_NOTICES.md"]
 
 [dependency-groups]
 dev = ["pytest", "ruff", "mypy", "pip-audit"]
@@ -44,4 +44,4 @@ url = "https://download.pytorch.org/whl/cpu"
 explicit = true
 
 [tool.hatch.build.targets.wheel.force-include]
-"THIRD_PARTY_NOTICES.md" = "nano_cwm_dataset/THIRD_PARTY_NOTICES.md"
+"THIRD_PARTY_NOTICES.md" = "nano_dataset/THIRD_PARTY_NOTICES.md"

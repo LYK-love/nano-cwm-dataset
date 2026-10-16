@@ -70,7 +70,7 @@ Rows requested outside `[0, T)` are zeros. `mask_padding` is true on stored rows
 `segment.info["final_observation"]` is the whole episode's endpoint. The frame after an in-bounds slice ending at `stop` is `observation_at(episode, stop)`.
 
 ```python
-from nano_cwm_dataset.view import DatasetView
+from nano_dataset.view import DatasetView
 
 selected = DatasetView(training, episodes=(7, 2, 9), step_limit=8)
 first = selected.load_episode(0)  # source episode 7, at most 8 actions
@@ -81,9 +81,9 @@ View IDs `0, 1, 2` are source IDs `7, 2, 9`. Source IDs are distinct and in rang
 ## API
 
 ```python
-from nano_cwm_dataset.dataset import Dataset
-from nano_cwm_dataset.observations import observation_at
-from nano_cwm_dataset.segment import SegmentId
+from nano_dataset.dataset import Dataset
+from nano_dataset.observations import observation_at
+from nano_dataset.segment import SegmentId
 ```
 
 | Call | Result |

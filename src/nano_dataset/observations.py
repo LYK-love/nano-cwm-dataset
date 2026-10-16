@@ -2,7 +2,7 @@
 
 from torch import Tensor
 
-from nano_cwm_dataset.episode import Episode
+from nano_dataset.episode import Episode
 
 
 def observation_at(episode: Episode, step: int) -> dict[str, Tensor]:

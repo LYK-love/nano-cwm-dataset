@@ -718,7 +718,7 @@ wheels = [
 ]
 
 [[package]]
-name = "nano-cwm-dataset"
+name = "nano-dataset"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

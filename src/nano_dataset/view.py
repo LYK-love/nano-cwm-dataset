@@ -1,8 +1,8 @@
 """Read-only episode selection using the same standard Dataset API."""
 
-from nano_cwm_dataset.dataset import Dataset
-from nano_cwm_dataset.episode import Episode
-from nano_cwm_dataset.observations import observation_at
+from nano_dataset.dataset import Dataset
+from nano_dataset.episode import Episode
+from nano_dataset.observations import observation_at
 
 
 class DatasetView(Dataset):
